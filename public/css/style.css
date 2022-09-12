@@ -1,0 +1,179 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+}
+
+.col-24 {
+  border: 1px solid black;
+  grid-column: span 24;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+.col-20 {
+  border: 1px solid black;
+  grid-column: span 20;
+  display: grid;
+}
+
+.col-16 {
+  border: 1px solid black;
+  grid-column: span 16;
+  display: grid;
+}
+
+.col-12 {
+  border: 1px solid black;
+  grid-column: span 12;
+  display: grid;
+}
+
+.col-8 {
+  border: 1px solid black;
+  grid-column: span 8;
+  display: grid;
+}
+
+.col-6 {
+  border: 1px solid black;
+  grid-column: span 6;
+  display: grid;
+}
+
+.col-4 {
+  border: 1px solid black;
+  grid-column: span 4;
+  display: grid;
+}
+
+.sub {
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.color {
+  grid-column: span 8;
+}
+
+.wi {
+  grid-column: auto;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.center div nav ul {
+  display: flex;
+  list-style-type: none;
+}
+.center li a {
+  text-decoration: none;
+  padding: 5px;
+}
+.center .redes {
+  display: none;
+}
+
+.navleft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.navleft .nav {
+  align-self: start;
+}
+.navleft div nav ul {
+  display: flex;
+  flex: 1 0 auto;
+  list-style-type: none;
+}
+.navleft li a {
+  text-decoration: none;
+  padding: 5px;
+}
+.navleft .redes {
+  display: none;
+}
+
+.navright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navright .nav {
+  align-self: end;
+}
+.navright div nav ul {
+  display: flex;
+  list-style-type: none;
+}
+.navright li a {
+  text-decoration: none;
+  padding: 5px;
+}
+.navright .redes {
+  display: none;
+}
+
+.lognav {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.lognav .nav {
+  display: flex;
+  flex: 1 1 auto;
+}
+.lognav div nav ul {
+  display: flex;
+  margin-left: 10px;
+  list-style-type: none;
+}
+.lognav li a {
+  text-decoration: none;
+  padding: 5px;
+}
+.lognav .redes {
+  align-content: flex-end;
+}
+
+.lognav2 {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.lognav2 .h1 {
+  flex: 0 0 auto;
+}
+.lognav2 .nav {
+  flex: 1;
+}
+.lognav2 div nav ul {
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+  list-style-type: none;
+}
+.lognav2 li a {
+  text-decoration: none;
+  padding: 5px;
+}
+
+.back {
+  height: 100vh;
+  background-image: url("../image/fondo.jpg");
+  background-size: 100% 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

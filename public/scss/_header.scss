@@ -1,0 +1,106 @@
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div nav ul{
+        display: flex;
+        list-style-type: none;
+         }
+         li a{
+            text-decoration: none;
+            padding: 5px;
+         }
+         .redes{
+            display: none;
+         }
+}
+.navleft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+      .nav{align-self: start;       
+    }
+    div nav ul{
+        display: flex;       
+        flex: 1 0 auto;
+        list-style-type: none;
+         }
+         li a{
+            text-decoration: none;
+            padding: 5px;
+         }
+         .redes{
+           display: none;
+            
+            
+         }
+        }
+.navright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      .nav{align-self: end;       
+    }
+    div nav ul{
+        display: flex;        
+        list-style-type: none;
+         }
+         li a{
+            text-decoration: none;
+            padding: 5px;
+         }
+         .redes{
+            display: none;
+         }
+}
+.lognav{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    .nav{
+        display: flex;
+        flex: 1 1 auto;
+    }
+    div nav ul{
+        display: flex;
+        margin-left:10px ;
+        list-style-type: none;
+    }
+    li a{
+        text-decoration: none;
+        padding: 5px;
+     }
+     .redes{
+        align-content: flex-end;
+     }
+}
+.lognav2{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+   
+    align-items: center;
+    
+   
+   .h1{
+    flex: 0 0 auto;
+   }
+    .nav {
+      
+        flex:1;  
+        
+    }
+    div nav ul{
+        
+        display: flex;
+        justify-content: center;
+        margin-left:10px ;
+        list-style-type: none;
+    }
+    li a{
+        text-decoration: none;
+        padding: 5px;
+     }
+}

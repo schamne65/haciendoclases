@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.color{
+    grid-column: span 8;
+}
+
+.wi{
+    grid-column: auto;
+}
