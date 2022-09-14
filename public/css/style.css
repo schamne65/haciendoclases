@@ -1,10 +1,13 @@
+.mar10 {
+  margin: 10px;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(24, 1fr);
 }
 
 .col-24 {
-  border: 1px solid black;
   grid-column: span 24;
 }
 
@@ -40,7 +43,7 @@
 
 .sub {
   display: grid;
-  grid-template-columns: subgrid;
+  grid-template-columns: repeat(24, 1fr);
 }
 
 .gap {
@@ -121,7 +124,6 @@
 }
 
 .lognav {
-  margin: 10px;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -206,6 +208,7 @@
   display: none;
 }
 .etiquetas article div a {
+  display: none;
   position: absolute;
   bottom: 0;
   left: 30%;
@@ -215,11 +218,16 @@
   width: 100%;
   height: 100%;
 }
+.etiquetas article div a {
+  position: absolute;
+  bottom: 10px;
+}
 
 .etiquetas article:hover div {
-  background-color: black;
-  opacity: 0.7;
   position: relative;
+}
+.etiquetas article:hover div img {
+  opacity: 0.4;
 }
 .etiquetas article:hover div p {
   position: absolute;
@@ -228,9 +236,88 @@
 .etiquetas article:hover div span {
   display: block;
   position: absolute;
-  bottom: 50%;
-  left: 20%;
+  bottom: 40px;
+  text-align: center;
   font-size: 30px;
+}
+.etiquetas article:hover a {
+  display: block;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+
+.ordenuno {
+  margin-top: 15px;
+  overflow: hidden;
+}
+.ordenuno article {
+  border: 2px solid;
+  grid-column: span 6;
+}
+.ordenuno div {
+  background-color: greenyellow;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.ordenuno div p {
+  text-align: center;
+}
+.ordenuno div a {
+  position: absolute;
+  bottom: 5px;
+  padding: 8px;
+  left: 30%;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+}
+.ordenuno div span {
+  display: none;
+}
+.ordenuno div img {
+  z-index: -4;
+  width: 100%;
+  height: 80%;
+}
+
+.ordendos {
+  margin-top: 15px;
+  overflow: hidden;
+}
+.ordendos article {
+  border: 2px solid;
+  grid-column: span 6;
+}
+.ordendos div {
+  background-color: greenyellow;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.ordendos div p {
+  position: absolute;
+  top: 0;
+  text-align: center;
+}
+.ordendos div a {
+  position: absolute;
+  bottom: 5px;
+  padding: 8px;
+  left: 30%;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+}
+.ordendos div span {
+  display: none;
+}
+.ordendos div img {
+  padding-top: 20px;
+  z-index: -4;
+  width: 100%;
+  height: 85%;
 }
 
 /*# sourceMappingURL=style.css.map */

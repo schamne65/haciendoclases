@@ -37,7 +37,7 @@
                 span{
                     display: none;
                 }
-                a{
+                a{display: none;
                     position:absolute;
                     bottom: 0;
                     left: 30%;
@@ -49,44 +49,114 @@
                     z-index: -4;
                     width: 100%;
                     height: 100%;
+                 } 
+                 a{
+                    position: absolute;
+                    bottom: 10px;
                  }
-                 
-            
         }
        
     }
     
 }
-.etiquetas article:hover{
-    
-        
-        div{
-        
-            ;
-            background-color: black;
-            opacity: 0.7;
-           
-            position: relative;
+.etiquetas article:hover{  
+        div{ 
+              position: relative;
+              img{
+                opacity: 0.4;
+              }
                 p{
+                
                     position: absolute;
                     top: 0;
                 }
-                span{
-                  
-                    
+                span{            
                     display: block;
                     position: absolute;
-                    bottom: 50%;
-                    left: 20%;
-                    font-size: 30px;
-
-                }
-            
-               
-            
-        }
+                    bottom: 40px;
+                    text-align: center;
+                    font-size: 30px;}   
+                 }
+                 a{
+                    display: block;
+                   
+                    border-radius: 5px;
+                    background-color: black;
+                    color: white;
+                 }
        
     }
-    
+.ordenuno{
+    margin-top: 15px;
+    overflow: hidden;
+    article{
+        border: 2px solid ;
+        grid-column: span 6;}
+        div{
+            background-color: greenyellow;
+            position: relative;
+            width: 100%;
+            height: 100%;           
+            
+            p{
+                text-align: center;
+            }
+            
+             a{
+                position: absolute;
+                bottom: 5px;
+                padding: 8px;
+                left: 30%;
+                color: white;
+                background-color: black;
+                border-radius: 10px;
+             }
+            span{
+                display: none;
+            }
+            img{
+                z-index: -4;
+                width: 100%;
+                height: 80%;
+             } 
+            }
+}    
+.ordendos{
+    margin-top: 15px;
+    overflow: hidden;
+    article{
+        border: 2px solid ;
+        grid-column: span 6;}
+        div{
+            background-color: greenyellow;
+            position: relative;
+            width: 100%;
+            height: 100%;           
+            
+            p{ position: absolute;
+                top: 0;
+                
+                text-align: center;
+            }
+            
+             a{
+                position: absolute;
+                bottom: 5px;
+                padding: 8px;
+                left: 30%;
+                color: white;
+                background-color: black;
+                border-radius: 10px;
+             }
+            span{
+                display: none;
+            }
+            img{padding-top:20px ;
+                z-index: -4;
+                width: 100%;
+                height: 85%;
+             } 
+            }
+}   
 
     
