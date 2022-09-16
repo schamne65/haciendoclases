@@ -1,10 +1,12 @@
 .position{
     display: flex;
-    article{
+    article{overflow: hidden;
+      
         display: flex;
         flex-direction: column;
         position: relative;
         width: 100%;
+        
         h2{
             
             position: absolute;
@@ -14,7 +16,9 @@
             position: absolute;
             bottom: 0;
         }
-
+            img{
+                  max-width: 100%;
+            }
     }
 }
     
@@ -87,11 +91,16 @@
        
     }
 .ordenuno{
+    
     margin-top: 15px;
     overflow: hidden;
+    
+    
     article{
         border: 2px solid ;
-        grid-column: span 6;}
+        grid-column: span 6;
+        grid-row:span 12;
+    }
         div{
             background-color: #C3FF99;
             position: relative;
@@ -187,3 +196,79 @@
         }
     }
 }
+
+@mixin not {
+    @media screen and (max-width: 900px) {
+
+       grid-column: span 8;
+       grid-row: span 8;
+
+       div{
+        background-color: wheat ;
+       }
+    
+       
+    }
+       
+}
+.etiquetas {
+   article{
+   @include not()}
+}
+.ordenuno{
+    article{
+        
+        @include not();}
+}
+.ordendos{
+    article{
+        @include not()}
+}
+
+@mixin net {
+    @media screen and (max-width: 650px) {
+
+       grid-column: span 12;
+       grid-row:span 6;
+
+       div{
+        background-color: wheat ;
+       }
+    
+       
+    }
+       
+}
+.ordenuno{
+    article{
+        @include net()
+    }
+}
+.ordendos{
+    article{
+        @include net()
+    }
+}
+.etiquetas{
+    article{
+        @include net()
+    }
+}
+/*@mixin cel {
+    @media screen and (max-width: 480px) {
+
+       grid-column: span 24;
+       grid-row:span 3;
+
+       div{
+        background-color: wheat ;
+       }
+    
+       
+    }
+       
+}
+.ordenuno{
+    article{
+    @include cel()}
+}*/

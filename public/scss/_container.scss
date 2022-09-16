@@ -4,10 +4,13 @@
 .grid-container{
     display: grid;
     grid-template-columns: repeat(24, 1fr);
+    
+    
 
 }
 .col-24{
     grid-column: span 24;
+   
   
 }
 
@@ -55,6 +58,9 @@
 .sub{
     display: grid;
     grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(24, 1fr);
+   
+   
 }
 .gap{
 gap:10px;
